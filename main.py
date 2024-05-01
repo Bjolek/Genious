@@ -75,10 +75,11 @@ class UkrScreen3(Screen):
         btn_back.bind(on_press=self.goBackToFirst)
 
         txt_input = TextInput(hint_text="Введіть текст")
+        Writhe = Label(text="Привіт!")
 
         hbox.add_widget(btn_back)
         hbox.add_widget(txt_input)
-
+        hbox.add_widget(Writhe)
         self.add_widget(hbox)
 
     def goBackToFirst(self, instance):
